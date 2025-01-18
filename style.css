@@ -36,10 +36,11 @@ background-color:whitesmoke;
 .container {
     width: 80%;
     margin: 20px auto;
-    background: #fff;
+    background:lemonchiffon;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    outline-color: black;
 }
 header {
     background: lemonchiffon;
