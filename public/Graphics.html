@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gwe S. Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="./wsite.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:lawngreen;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #f4f4f4;
+        }
+
+        .portfolio {
+            padding: 3%;
+            text-align: center;
+            background-color:green;
+        }
+
+        .portfolio h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img, .card video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card-content {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .card-content h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.25rem;
+            color: red;
+            text-decoration: underline;
+        }
+        .card-content h4 {
+            
+            color: #FB9EC6;
+        }
+
+        .card-content p {
+            margin: 0 0 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .card-content button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-content button:hover {
+            background-color: #0056b3;
+        }
+
+        .about{
+            padding: 2rem;
+            text-align: center;
+
+
+        } #contact {
+            padding: 5%;
+            text-align: center;
+            background:#D4F6FF;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #25034b;
+            color: #fff;
+        }
+        .book{
+        padding-bottom: 2%;
+        align-items: center;
+        align-items: end;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">S. Gwe Designer </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./competences-abilities.html">Portfolio</a></li>
+                <li><a href="./personal.html">About</a></li>
+                <li><a href="./personal.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to My Graphic Design Portfolio</h1>
+        <p>Creative designs that inspire and captivate.</p>
+    </section>
+
+        <!-- Skills Table Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>My Skills Level In:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Software</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Canva</td>
+                            <td><div class="progress-bar" style="width: 90%"></div><span>75%</span></td>
+                        </tr>
+                        <tr>
+                            <td>AdobePro/Premeire</td>
+                            <td><div class="progress-bar" style="width: 60%"></div><span>60%</span></td>
+                        </tr>
+                        <tr>
+                            <td>CorelDraw</td>
+                            <td><div class="progress-bar" style="width: 70%"></div><span>70%</span></td>
+                        </tr>
+                        <tr>
+                            <td>PhotoShop</td>
+                            <td><div class="progress-bar" style="width: 70%"></div><span>70%</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    
+    
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <div class="gallery">
+            <div class="card">
+                <img src="./Graphics/pathfinder AnimatedLogo.gif" alt="Project 1">
+                <div class="card-content">
+                    <h3>Animated logos</h3>
+                    <h4>Bring Your Brand to Life with a Stunning Animated Logo</h4>
+                    <p>Looking for a way to make your brand unforgettable? 
+                        Let me transform your static logo into a vibrant, 
+                        eye-catching animation that leaves a lasting impression!
+                         Perfect for websites, social media, video intros, and presentations.</p>
+                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                        </div>
+            </div>
+           
+            <div class="card">
+                <img src="./Graphics/PATHFINDER LABS page cover.png" alt="Project 3">
+                <div class="card-content">
+                    <h3>Brochures</h3>
+                    <h4>Transform Your Brand with a Professional Business Brochure!</h4>
+                    <p>Showcase your products, services, and story with a sleek, 
+                        custom-designed brochure. Whether for marketing, events, or presentations, 
+                        I'll create a visually stunning layout that captures attention and delivers 
+                        your message effectively.
+                         Stand out and make an impact—order your tailored brochure today!</p>
+                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                        </div>
+            </div>
+
+            <div class="card">
+                <img src="./Graphics/Stanley Gwe card.png" alt="Project 3">
+                <div class="card-content">
+                    <h3>Complimentary Cards </h3>
+                    <h4>Make a Lasting Impression with a Custom Business Card!</h4>
+                    <p>Elevate your brand with a professionally designed business card that’s sleek,
+                         modern, and memorable. 
+                         Perfectly tailored to reflect your style and business identity, 
+                         it’s the ultimate networking tool. 
+                        Let’s create a design that stands out and leaves a mark—order your 
+                        unique business card today!</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="./Graphics/Wellnst logo.png" alt="Project 3">
+                <div class="card-content">
+                    <h3>PNG logo1</h3>
+                    <h4>Create a Stunning PNG Logo for Your Brand!</h4>
+                    <p>Looking for a clean, high-quality logo that speaks volumes about your business? 
+                        I’ll design a custom PNG logo with a transparent background, perfect for websites, 
+                        social media, and print. Stand out with a design tailored to your brand’s identity. 
+                        Let’s bring your vision to life—order now!</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <img src="./Graphics/Tour237Logo.png" alt="Project 3">
+                <div class="card-content">
+                    <h3>PNG logo2</h3>
+                    <h4>Unique/custom Logo</h4>
+                    <p>Looking for a clean, high-quality logo that speaks volumes about your business? 
+                        I’ll design a custom PNG logo with a transparent background, perfect for websites, 
+                        social media, and print. Stand out with a design tailored to your brand’s identity.
+                         Let’s bring your vision to life—order now!</p>
+                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                        </div>
+            </div>
+
+            <div class="card">
+                <img src="./Graphics/thumnail cyber A.png" alt="Project 3">
+                <div class="card-content">
+                    <h3>Thumnail</h3>
+                    <h4>Get Click-Worthy Thumbnails That Stand Out!</h4>
+                    <p>Boost your views and engagement with a custom thumbnail designed to grab attention 
+                        instantly. Perfect for YouTube, social media, and more, I’ll create an eye-catching, 
+                        high-quality design that represents your content perfectly. 
+                        Turn clicks into fans—order your custom thumbnail today! 🎯📸</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/Canva 50 Design Milestone Badge.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Canva Recognition</h3>
+                    <p>Certificated of completion of More than 50 projects in canva</p>
+                    <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/Gody video ad.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Business Ads</h3>
+                    <h4>Create Engaging Video Ads That Drive Results!</h4>
+                    <p>Capture attention and boost conversions with professionally crafted video ads tailored
+                         to your brand. Whether for social media, YouTube, or campaigns, 
+                         I’ll deliver high-quality, compelling visuals and messages that resonate with
+                          your audience.
+                         Let’s make your ads unforgettable—order your custom video ad today! 🎥🚀</p>
+                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                        </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/scannowPcTricks.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Online Tutoring</h3>
+                    <h4>Start Learning with Engaging Online Teaching Sessions!</h4>
+                    <p>Unlock your potential with interactive, personalized online teaching tailored to your 
+                        learning style. Whether for academics, skills development, or career growth, 
+                        I offer expert guidance in a fun and effective way. Flexible schedules,
+                        clear explanations, and guaranteed progress—let’s achieve your goals together! 🌟📚</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/wedding ad.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Event Coverage</h3>
+                    <h4>Bring Your Love Story to Life with Wedding & Romance Photo Animation!</h4>
+                    <p>Turn your cherished moments into magical, animated memories. 
+                        I’ll transform your wedding and romance photos with beautiful animations, effects, 
+                        and music that capture your love story perfectly. 
+                        Perfect for slideshows, social media, or keepsakes.
+                         Let’s create something unforgettable—order your animated love story today! 💕🎥✨</p>
+                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                        </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/Life billionYrsAgo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Documentary</h3>
+                    <h4>Craft a Compelling Documentary That Captivates Audiences!</h4>
+                    <p>Bring stories to life with a professionally produced documentary. 
+                        From powerful visuals to engaging storytelling, 
+                        I’ll create a masterpiece that informs, inspires, and connects with viewers.
+                         Whether for personal projects, brands, or causes,
+                          let’s turn your vision into a cinematic experience. 
+                        Order your custom documentary today! 🎥🌍✨</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/Browsing in Airplane Mode.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Tutoring</h3>
+                    <p>Unlock your potential with interactive, personalized online teaching 
+                        tailored to your learning style. Whether for academics, skills development, 
+                        or career growth, I offer expert guidance in a fun and effective way. 
+                        Flexible schedules, clear explanations, 
+                        and guaranteed progress—let’s achieve your goals together! 🌟📚</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/hotel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Wed App Functionality</h3>
+                    <h4>Hotel site</h4>
+                    <p>Make onboarding effortless with a clear and engaging video user guide for your web app.
+                         I’ll create a professional tutorial that explains features, navigation, 
+                         and usage step-by-step. Perfect for new users and reducing support queries. 
+                        Let’s make your app user-friendly—order your custom video guide today! 🎥🖥️✨</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/Tour237 (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Wed App Functionality</h3>
+                    <h4>One Stop Business app</h4>
+
+                    <p>Make onboarding effortless with a clear and engaging video user guide for your web app.
+                        I’ll create a professional tutorial that explains features, navigation, 
+                        and usage step-by-step. Perfect for new users and reducing support queries. 
+                       Let’s make your app user-friendly—order your custom video guide today! 🎥🖥️✨</p>
+                       <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/WellNest.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Wed App Functionality</h3>
+                    <h4>Medical Web App</h4>
+                    <p>Make onboarding effortless with a clear and engaging video user guide for your web app.
+                        I’ll create a professional tutorial that explains features, navigation, 
+                        and usage step-by-step. Perfect for new users and reducing support queries. 
+                       Let’s make your app user-friendly—order your custom video guide today! 🎥🖥️✨</p>
+                       <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+            <div class="card">
+                <video controls>
+                    <source src="./Graphics/Light Blue Sci-Fi Futuristic Animated Logo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="card-content">
+                    <h3>Video Logo</h3>
+                    <p>Looking for a way to make your brand unforgettable? Let me transform your static logo
+                         into a vibrant, eye-catching animation that leaves a lasting impression! 
+                        Perfect for websites, social media, video intros, and presentations.</p>
+                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
+                    </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm a passionate graphic designer specializing in creating visual stories
+             that resonate. <br>
+              With a keen eye for details, 
+             I bring ideas to life through stunning designs. <br>
+             Most Designs here are for My Wed Development Applications.
+             <a href="./wsite.html">see Wed Dev Portfolio</a>
+            </p>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
+        <p>Cell: +237 652 484 583 / +237 683 762 319</p>
+        <p>Mail: <a href="mailto:pathfinderlabs1@gmail.com">Send mail</a></p>
+        <a href="https://wa.me/+237652484583?text=Hello!" target="_blank">WhatsApp1</a><br>
+        <a href="https://wa.me/+237683762319?text=Hello!" target="_blank">WhatsApp2</a>
+    
+    </section>
+    
+
+    <footer>
+        <p>© Gwe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('#contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
