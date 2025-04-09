@@ -5,52 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV GWE Stanley AYUNGHA</title>
     <link rel="stylesheet" href="./public/style.css">
-    <style>
-        header{
-            padding: 3%;
-        }
-    </style>
+    <link rel="stylesheet" href="./home.css"> <!-- Added new stylesheet -->
 </head>
 <body>
-    
-        <header> 
-            <h3>C.V GWE Stanley AYUNGHA</h3>
-            <nav>
-                <ul>
-                    <a href="./public/personal.html">Contact</a> <br>
-                    <a href="./public/competences-abilities.html">Portfolio</a> <br>
-                    <a href="./public/wsite.html">Web Development Portfolio</a> <br>
-                    <a href="./public/Graphics.html">Graphic Designing Portfolio</a> <br>
-                  
+    <header class="hero-header"> 
+        <div class="header-content">
+            <h1 class="name-title">GWE Stanley AYUNGHA</h1>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="./public/personal.html">Contact</a></li>
+                    <li><a href="./public/competences-abilities.html">Portfolio</a></li>
+                    <li><a href="./public/wsite.html">Web Development</a></li>
+                    <li><a href="./public/Graphics.html">Graphic Design</a></li>
                 </ul>
             </nav>
-    
-        </header>
-        <div class="container">
-    <h1 class="main">Jr. Accountant and Web Developer <br> 
-        <span class="creative">(BTech Accounting and Finance, Web Development, UDEMY)</span></h1>
-    <hr>
-</div> 
-<div>
-
-    <div class="container">
-        
-        <div class="button-container">
-            <button class="btn btn-primary"><a href="./public/personal.html">Personal Information</a></button>
-            <button class="btn btn-primary"><a href="./public/education.html">Education</a></button>
-            <button class="btn btn-primary"><a href="./public/work experience.html">Work Experience</a></button>
-            <button class="btn btn-primary"><a href="./public/competences-abilities.html">Competences/Abilities</a></button>
-            <button class="btn btn-primary"><a href="./public/hobbies.html">Hobbies</a></button>
         </div>
-        
+    </header>
 
-  
-    </div>
-</div>
-<footer class="bg-dark text-white text-center py-3">
-    &copy; <span id="year"></span> Gwe Stanley AYUNGHA. All rights reserved.
-</footer>
+    <main class="main-content">
+        <div class="container">
+            <h2 class="professional-title">
+                Jr. Accountant and Graphic/Web Developer
+                <span class="subtitle">(BTech Accounting and Finance, Web Development, UDEMY)</span>
+            </h2>
+            <hr class="divider">
+            
+            <div class="action-buttons">
+                <a href="./public/personal.html" class="btn">Personal Information</a>
+                <a href="./public/education.html" class="btn">Education</a>
+                <a href="./public/work experience.html" class="btn">Work Experience</a>
+                <a href="./public/competences-abilities.html" class="btn">Competences/Abilities</a>
+                <a href="./public/hobbies.html" class="btn">Hobbies</a>
+            </div>
+        </div>
+    </main>
 
+    <footer class="site-footer">
+        &copy; <span id="year"></span> Gwe Stanley AYUNGHA. All rights reserved.
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="/public/new-script.js"></script> <!-- Added new JS -->
 </body>
-<script src="/script.js"></script>
 </html>
